@@ -1,0 +1,84 @@
+.sidebar {
+    width: 100px;
+    min-height: 100vh; /* min height set to 100% of the viewport height */
+    background-color: #f0f0f0;
+    padding:  10px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  } 
+
+  .menuWrap {
+    display: none;
+  }
+  .sidebar-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-options li {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 15px;
+    
+  }
+  
+  
+  .sidebar-options li.selected {
+    background-color: rgba(104, 156, 211, 0.5);
+    color: #007aff;
+    border: 2px solid #007aff;
+  }
+  
+  .assessment-section {
+    margin-top: 20px;
+  }
+  
+ hr {
+    width: 80% !important;
+    margin-top: 35px !important;
+    border-top: 1px dotted #007aff !important;
+ }  
+
+ @media (min-width: 320px) and (max-width: 520px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.show {
+      display: block;
+      position: absolute;
+      width: 50%;
+      z-index: 2;
+      transform: translateX(0%);
+      transition: transform 0.2s ease;
+    }  
+    
+    .hamburger-menu {
+      display: inline;
+      margin-right: 10px;
+      border: none;
+      background: transparent;
+      border-radius: 50%;
+      padding: 10px;
+      background-color: rgba(235, 232, 253, 1);
+      cursor: pointer;
+      color: rgba(28, 73, 128, 1);
+    } 
+    .menuWrap {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+    }
+    .hamburgercross {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+}
