@@ -52,12 +52,12 @@
 
   .sidebar.show {
       display: block;
-      position: absolute;
-      width: 50%;
+      position: fixed;
+      width: 60%;
       z-index: 2;
-      transform: translateX(0%);
-      transition: transform 0.2s ease;
     }  
+    
+
     
     .hamburger-menu {
       display: inline;

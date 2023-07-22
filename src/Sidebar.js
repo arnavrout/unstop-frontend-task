@@ -17,7 +17,7 @@ const Sidebar = () => {
 
   //clicking the "X" icon when we want to go back from hamburger menu
   const handleCloseSidebar = () => {
-    setShowSidebar(false);
+    setShowSidebar(!showSidebar);
   };
 
   return (
